@@ -1,0 +1,50 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Publications — Niraj Kumar</title>
+<link rel="stylesheet" href="/assets/style.css">
+</head><body>
+
+<div class="nav">
+  <div class="container inner">
+    <div class="brand"><a href="/index.html">Niraj&nbsp;Kumar</a></div>
+    <a href="/publications.html">Publications</a>
+    <a href="/cv.html">CV</a>
+    <a href="/misc.html">Miscellaneous</a>
+    <a class="btn" href="/assets/Niraj_Kumar_CV.pdf">Download CV</a>
+  </div>
+</div>
+
+<main class="container">
+  <h1 class="h1">Publications</h1>
+  <p class="small">List is driven by <code>assets/publications.json</code>. Update that file to change the entries. For bulk import, export BibTeX from Google Scholar and convert to JSON.</p>
+  <div id="pubs" class="list"></div>
+</main>
+
+<div class="footer small">© 2025 Niraj Kumar · GitHub Pages</div>
+
+<script>
+async function loadPubs(){
+  try {
+    const resp = await fetch('/assets/publications.json');
+    const items = await resp.json();
+    const container = document.getElementById('pubs');
+    container.innerHTML = items.map((p, i) => `
+      <article class="pub">
+        <div><strong>${p.title || 'Untitled'}</strong></div>
+        <div class="meta">
+          ${p.authors || ''}${p.venue ? ' · ' + p.venue : ''}${p.year ? ' · ' + p.year : ''}
+        </div>
+        <div class="small">
+          ${
+            p.links ? p.links.map(L => `<a href="${L.url}" target="_blank" rel="noopener">${L.label}</a>`).join(' · ') : ''
+          }
+        </div>
+      </article>
+    `).join('');
+  } catch(e) {
+    document.getElementById('pubs').innerHTML = '<p class="small">No publications found. Edit <code>assets/publications.json</code>.</p>';
+  }
+}
+loadPubs();
+</script>
+</body></html>
