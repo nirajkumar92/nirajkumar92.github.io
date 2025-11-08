@@ -5,52 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Niraj Kumar — Home</title>
   <link rel="stylesheet" href="/assets/style.css">
-  <style>
-    body {
-      background: #ffffff;
-      color: #222;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-    }
-    a { color: #0033cc; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .container { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
-    header { display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem; margin-bottom: 2rem; }
-    header img { width: 220px; height: auto; border-radius: 8px; }
-    h1 { font-size: 2.2rem; margin-bottom: 0.3rem; }
-    h2 { margin-top: 2rem; color: #111; }
-    .affil-links a { margin-right: 0.6rem; }
-    .footer { margin-top: 3rem; padding: 1rem; border-top: 1px solid #ccc; text-align: center; font-size: 0.9rem; color: #555; }
-    ul { margin-top: 0.5rem; }
-  </style>
 </head>
-
 <body>
+  <div class="nav">
+    <div class="inner">
+      <div class="brand"><a href="/index.html">Niraj Kumar</a></div>
+      <a href="/publications.html">Publications</a>
+      <a href="/cv.html">CV</a>
+      <a href="/misc.html">Miscellaneous</a>
+    </div>
+  </div>
+
   <div class="container">
     <header>
       <img src="/assets/profile.jpg" alt="Niraj Kumar portrait">
       <div>
         <h1>Niraj Kumar</h1>
         <p>
-          I am a Researcher at the 
-          <a href="https://www.jpmorgan.com/technology/artificial-intelligence/gtar" target="_blank">Global Technology Applied Research</a> 
-          center of 
-          <a href="https://www.jpmorganchase.com/" target="_blank">JPMorgan Chase</a> 
-          where I head the team of <strong>Quantum-Inspired Classical Algorithms</strong> group for large-scale ML and Optimization problems.
-          Previously, I have been a quantum and classical algorithms researcher at 
-          <a href="https://pasqal.com/" target="_blank">PASQAL</a> and 
+          I am a Researcher at the
+          <a href="https://www.jpmorgan.com/technology/artificial-intelligence/gtar" target="_blank">Global Technology Applied Research</a>
+          center of <a href="https://www.jpmorganchase.com/" target="_blank">JPMorgan&nbsp;Chase</a> where I head the team of
+          <strong>Quantum-Inspired Classical Algorithms</strong> group for large scale ML and Optimization problems.
+          Previously, I have been a quantum and classical algorithms researcher at
+          <a href="https://pasqal.com/" target="_blank">PASQAL</a> and
           <a href="https://www.paypal.com/" target="_blank">PayPal Inc.</a>
         </p>
         <p>
-          I received my Ph.D. in Quantum Computing from 
-          <a href="https://www.telecom-paris.fr/en/home" target="_blank">Télécom ParisTech</a>, 
-          and my Post-Doc from the 
-          <a href="https://www.ed.ac.uk/informatics" target="_blank">School of Informatics</a>, 
-          <a href="https://www.ed.ac.uk/" target="_blank">University of Edinburgh</a>. 
-          I received my Bachelor's and Master's degree from the 
-          <a href="https://www.iitk.ac.in/" target="_blank">Department of Physics</a> at 
+          I received my Ph.D. in Quantum Computing from
+          <a href="https://www.telecom-paris.fr/en/home" target="_blank">Télécom ParisTech</a>, and my Post-Doc from the
+          <a href="https://www.ed.ac.uk/informatics" target="_blank">School of Informatics</a>,
+          <a href="https://www.ed.ac.uk/" target="_blank">University of Edinburgh</a>.
+          I received my Bachelor's and Master's degree from the
+          <a href="https://www.iitk.ac.in/" target="_blank">Physics Department</a> at the
           <a href="https://www.iitk.ac.in/" target="_blank">Indian Institute of Technology (IIT) Kanpur</a>.
         </p>
       </div>
@@ -59,38 +45,37 @@
     <section>
       <h2>Research Interests</h2>
       <p>
-        I have actively worked in the field of <strong>quantum machine learning</strong>, 
-        <strong>verification of quantum devices</strong>, and <strong>secure communications</strong>. 
-        My expertise has been in building quantum algorithms for multiple applications ranging from finance to more fundamental problems. 
-        More recently, I have shifted focus towards primary topics in <strong>quantum-inspired classical algorithms</strong>:
+        I have actively worked in the field of <strong>quantum machine learning</strong>,
+        <strong>verification of quantum devices</strong>, and <strong>secure communications</strong>.
+        My expertise has been in building quantum algorithms for multiple applications ranging from finance to more
+        fundamental problems. More recently I have shifted focus towards primary topics in
+        <strong>quantum-inspired classical algorithms</strong>:
       </p>
       <ol>
         <li>
-          <b>Randomized NLA techniques for big-data analytics</b>: 
-          Fast provable clustering 
-          (<a href="https://arxiv.org/abs/2504.20982" target="_blank">[1]</a>), 
-          coreset selection and general data-distillation, regression 
-          (<a href="https://arxiv.org/abs/2506.03070" target="_blank">[2]</a>, 
+          <b>Randomized NLA techniques for big-data analytics</b>:
+          Fast provable clustering (<a href="https://arxiv.org/abs/2504.20982" target="_blank">[1]</a>),
+          coreset selection and general data-distillation, regression
+          (<a href="https://arxiv.org/abs/2506.03070" target="_blank">[2]</a>,
           <a href="https://arxiv.org/abs/2508.13108" target="_blank">[3]</a>).
         </li>
         <li>
-          <b>Classical techniques for faster discrete optimization</b> 
+          <b>Classical techniques for faster discrete optimization</b>
           (<a href="https://arxiv.org/abs/2504.00987" target="_blank">[5]</a>).
         </li>
         <li>
-          <b>Tensor-based techniques</b> for high-dimensional integration and LLM compression 
+          <b>Tensor based techniques</b> for high-dimensional integration, and LLM compression
           (<a href="https://arxiv.org/abs/2506.09105" target="_blank">[6]</a>).
         </li>
         <li>
-          <b>Machine Learning / LLM</b>: classical algorithmic techniques for explainability, compression, and fine-tuning 
+          <b>Machine Learning / LLM</b>: classical algorithmic techniques for explainability, compression, fine-tuning
           (<a href="https://arxiv.org/abs/2506.05216" target="_blank">[7]</a>).
         </li>
       </ol>
     </section>
 
-    <div class="footer">
-      © 2025 Niraj Kumar · Built with GitHub Pages
-    </div>
+    <div class="footer">© 2025 Niraj Kumar · Built with GitHub Pages</div>
   </div>
 </body>
 </html>
+
