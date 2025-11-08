@@ -1,14 +1,11 @@
 [
   {
-    "title": "See full publication list on Google Scholar",
+    "title": "See full list on Google Scholar",
     "authors": "Niraj Kumar",
     "venue": "Profile",
     "year": "",
     "links": [
-      {
-        "label": "Google Scholar",
-        "url": "https://scholar.google.com/citations?user=RTUHCCQAAAAJ&hl=en"
-      }
+      {"label":"Google Scholar","url":"https://scholar.google.com/citations?user=RTUHCCQAAAAJ&hl=en"}
     ]
   }
 ]
