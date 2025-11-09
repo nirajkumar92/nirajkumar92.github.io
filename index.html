@@ -67,6 +67,8 @@
     .info-grid i { color:#0033cc; width:18px; text-align:center; }
     .info-grid a { color:#0033cc; }
     ol, ul { padding-left:1.2rem; }
+    /* NEW: square bullets for research lists */
+    ul.square { list-style-type: square; padding-left: 1.5rem; margin-top: 0.5rem; }
   </style>
 </head>
 
@@ -117,7 +119,7 @@
       </div>
     </header>
 
-    <!-- RESEARCH INTERESTS UPDATED -->
+    <!-- RESEARCH INTERESTS (lists now square bullets) -->
     <section>
       <h2>Research Interests</h2>
 
@@ -125,21 +127,21 @@
       <p>
         My recent research focuses on <strong>quantum-inspired classical algorithms</strong> that leverage ideas from quantum computation to design efficient classical methods for large-scale problems:
       </p>
-      <ol>
+      <ul class="square">
         <li><b>Randomized NLA techniques for big-data analytics</b>: Fast provable clustering <a href="https://arxiv.org/abs/2504.20982" target="_blank">[1]</a>, coreset selection and regression <a href="https://arxiv.org/abs/2506.03070" target="_blank">[2]</a>, <a href="https://arxiv.org/abs/2508.13108" target="_blank">[3]</a>.</li>
         <li><b>Classical techniques for fast discrete optimization</b> <a href="https://arxiv.org/abs/2504.00987" target="_blank">[4]</a>.</li>
         <li><b>Tensor-based techniques</b> for high-dimensional integration and LLM compression <a href="https://arxiv.org/abs/2506.09105" target="_blank">[5]</a>.</li>
         <li><b>Machine Learning / LLM</b>: classical algorithmic techniques for explainability, compression, and fine-tuning <a href="https://arxiv.org/abs/2506.05216" target="_blank">[6]</a>.</li>
-      </ol>
+      </ul>
 
       <h3>Quantum Research</h3>
       <p>I have a diverse experience set across both theoretical and experimental aspects of quantum computing:</p>
-      <ol start="7">
-        <li><b>Quantum Algorithms:</b> Developed algorithms for machine learning — both variational <a href="https://iopscience.iop.org/article/10.1088/2058-9565/abd3db/meta" target="_blank">[7]</a>, <a href="https://quantum-journal.org/papers/q-2023-01-26-909/" target="_blank">[8]</a> — and provable methods based on quantum linear-algebra subroutines <a href="https://arxiv.org/abs/1312.4116" target="_blank">[9]</a>, <a href="https://quantum-journal.org/papers/q-2025-01-13-1588/" target="_blank">[10]</a>, <a href="https://arxiv.org/abs/2504.20982" target="_blank">[11]</a>, as well as optimization via QAOA <a href="https://www.science.org/doi/full/10.1126/sciadv.adm6761" target="_blank">[12]</a>, <a href="https://quantum-journal.org/papers/q-2022-11-17-861/" target="_blank">[13]</a>.</li>
+      <ul class="square">
+        <li><b>Quantum Algorithms:</b> Developed algorithms for machine learning — both variational <a href="https://iopscience.iop.org/article/10.1088/2058-9565/abd3db/meta" target="_blank">[7]</a>, <a href="https://quantum-journal.org/papers/q-2023-01-26-909/" target="_blank">[8]</a> — and provable methods based on quantum linear-algebra subroutines <a href="https://arxiv.org/abs/1312.4116" target="_blank">[9]</a>, <a href="https://quantum-journal.org/papers/q-2025-01-13-1588/" target="_blank">[10]</a>, <a href="https://arxiv.org/abs/2504.20982" target="_blank">[11]</a>; as well as optimization via QAOA <a href="https://www.science.org/doi/full/10.1126/sciadv.adm6761" target="_blank">[12]</a>, <a href="https://quantum-journal.org/papers/q-2022-11-17-861/" target="_blank">[13]</a>.</li>
         <li><b>Privacy in Machine Learning using Quantum:</b> Frameworks for privacy in distributed (federated) learning where the model is quantum <a href="https://arxiv.org/abs/2405.08801" target="_blank">[14]</a>, <a href="https://www.nature.com/articles/s41534-025-01022-z" target="_blank">[15]</a> and where classical neural networks communicate via quantum channels <a href="https://iopscience.iop.org/article/10.1088/2058-9565/ad40cc/meta" target="_blank">[16]</a>.</li>
         <li><b>Quantum Information and Cryptography:</b> Quantum-classical separations in communication complexity <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.95.032337" target="_blank">[17]</a>; quantum money <a href="https://www.mdpi.com/2410-387X/3/4/26" target="_blank">[18]</a>; authentication <a href="https://dl.acm.org/doi/abs/10.1145/3484197" target="_blank">[19]</a>; and quantum cloning <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.105.042604" target="_blank">[20]</a>.</li>
-        <li><b>Quantum Advantage Demonstrations:</b> Built and used photonic coherent-state systems with ultralow laser pulses to show advantage in communication complexity <a href="https://www.nature.com/articles/s41467-019-12139-z" target="_blank">[21]</a>, and efficient verification of non-interactive zero-knowledge proofs <a href="https://www.nature.com/articles/s41467-021-21119-1" target="_blank">[22]</a>. More recently I have contributed to quantum advantage demonstration in optimization <a href="https://www.science.org/doi/full/10.1126/sciadv.adm6761" target="_blank">[23]</a>, and certified randomness generation <a href="https://www.nature.com/articles/s41586-025-08737-1" target="_blank">[24]</a>.</li>
-      </ol>
+        <li><b>Quantum Advantage Demonstrations:</b> Built and used photonic coherent-state systems with ultralow laser pulses to show advantage in communication complexity <a href="https://www.nature.com/articles/s41467-019-12139-z" target="_blank">[21]</a>, efficient verification of non-interactive zero-knowledge proofs <a href="https://www.nature.com/articles/s41467-021-21119-1" target="_blank">[22]</a>, optimization <a href="https://www.science.org/doi/full/10.1126/sciadv.adm6761" target="_blank">[23]</a>, and certified randomness generation <a href="https://www.nature.com/articles/s41586-025-08737-1" target="_blank">[24]</a>.</li>
+      </ul>
     </section>
 
     <section>
@@ -157,6 +159,7 @@
   </div>
 </body>
 </html>
+
 
 
 
