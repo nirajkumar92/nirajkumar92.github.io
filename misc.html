@@ -19,7 +19,7 @@
     ]
   }
   </script>
-  
+
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://nirajkumar92.github.io/misc.html">
@@ -36,43 +36,87 @@
 </head>
 
 <body>
-  <div class="nav">
-    <div class="inner">
-      <div class="brand"><a href="/index.html">Niraj Kumar</a></div>
-      <a class="nav-link" href="/publications.html">Publications</a>
-      <a class="nav-link" href="/cv.html">CV</a>
-      <a class="nav-link" href="/misc.html" aria-current="page">Miscellaneous</a>
+  <nav class="skip-links">
+    <ul>
+      <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+      <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+      <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+    </ul>
+  </nav>
+
+  <div class="masthead">
+    <div class="masthead__inner-wrap">
+      <div class="masthead__menu">
+        <nav id="site-nav" class="greedy-nav">
+          <a class="site-title" href="/index.html">Niraj Kumar</a>
+          <ul class="visible-links">
+            <li><a href="/publications.html">Publications</a></li>
+            <li><a href="/cv.html">CV</a></li>
+            <li><a href="/misc.html" aria-current="page">Miscellaneous</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </div>
 
-  <div class="container">
-    <h1>Miscellaneous</h1>
-    <ul class="square">
-      <li>
-        I hail from a small industrial town of
-        <a href="https://en.wikipedia.org/wiki/Jamshedpur" target="_blank">Jamshedpur</a>
-        in India. Jamshedpur is the home of one of the largest steel manufacturing companies 
-        <a href="https://en.wikipedia.org/wiki/Tata_Steel" target="_blank">Tata Steel</a> in India.
-      </li>
-      <li>
-        I speak intermediate French, having spent four years living in Paris during my Ph.D.
-      </li>
-      <li>
-        I picked up a passion for robotics during my undergraduate days at IIT Kanpur,
-        where I was a core member of the IIT Kanpur
-        <a href="https://en.wikipedia.org/wiki/Robocon_India" target="_blank">Robocon team</a>.
-      </li>
-      <li>
-        I have recently picked up Chess and am working to improve my positional style.
-      </li>
-      <li>
-        I am a passionate follower of Tennis (an amateur USTA 4.0 level player),
-        Formula 1, and Cricket.
-      </li>
-    </ul>
+  <div class="initial-content">
+    <div id="main" role="main">
+      <div class="layout--single">
+        <aside class="sidebar sticky">
+          <div class="author__avatar">
+            <img src="/assets/profile.jpg" alt="Niraj Kumar portrait">
+          </div>
+          <div class="author__content">
+            <h3 class="author__name">Niraj Kumar</h3>
+            <p class="author__bio">Applied Research Director at JPMorganChase (GTAR), New York.</p>
+          </div>
+          <div class="author__urls-wrapper">
+            <ul class="author__urls">
+              <li>New York, United States</li>
+              <li>JPMorgan Chase</li>
+              <li><a href="mailto:nirajhariom@gmail.com">Email</a></li>
+              <li><a href="https://www.linkedin.com/in/nirajkumar92/" target="_blank">LinkedIn</a></li>
+              <li><a href="https://x.com/niraj_kum" target="_blank">Twitter</a></li>
+              <li><a href="https://scholar.google.com/citations?user=RTUHCCQAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
+            </ul>
+          </div>
+        </aside>
 
-    <div class="footer">© 2025 Niraj Kumar</div>
+        <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+          <header class="page__header">
+            <h1 class="page__title p-name" itemprop="headline">Miscellaneous</h1>
+          </header>
+
+          <section class="page__content e-content" itemprop="text">
+            <ul>
+              <li>
+                I hail from a small industrial town of
+                <a href="https://en.wikipedia.org/wiki/Jamshedpur" target="_blank">Jamshedpur</a>
+                in India. Jamshedpur is the home of one of the largest steel manufacturing companies
+                <a href="https://en.wikipedia.org/wiki/Tata_Steel" target="_blank">Tata Steel</a> in India.
+              </li>
+              <li>
+                I speak intermediate French, having spent four years living in Paris during my Ph.D.
+              </li>
+              <li>
+                I picked up a passion for robotics during my undergraduate days at IIT Kanpur,
+                where I was a core member of the IIT Kanpur
+                <a href="https://en.wikipedia.org/wiki/Robocon_India" target="_blank">Robocon team</a>.
+              </li>
+              <li>
+                I have recently picked up Chess and am working to improve my positional style.
+              </li>
+              <li>
+                I am a passionate follower of Tennis (an amateur USTA 4.0 level player),
+                Formula 1, and Cricket.
+              </li>
+            </ul>
+          </section>
+
+          <footer class="page__footer" id="footer">© 2025 Niraj Kumar</footer>
+        </article>
+      </div>
+    </div>
   </div>
 </body>
 </html>
-
