@@ -247,7 +247,7 @@ a:focus {
 }
 
 .page__content ol.journey-list {
-  margin: 0.75rem 0 1rem;
+  margin: 0.55rem 0 0.8rem;
   padding: 0;
   list-style: none;
   position: relative;
@@ -257,17 +257,17 @@ a:focus {
 .page__content ol.journey-list::before {
   content: "";
   position: absolute;
-  left: 0.8rem;
-  top: 0.35rem;
-  bottom: 0.6rem;
-  width: 2px;
-  background: linear-gradient(180deg, #d5e2e7 0%, #edf3f6 100%);
+  left: 0.58rem;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  width: 1.5px;
+  background: linear-gradient(180deg, #d0dde3 0%, #edf3f6 100%);
 }
 
 .journey-item {
   position: relative;
-  padding-left: 2.7rem;
-  margin-bottom: 0.55rem;
+  padding-left: 1.95rem;
+  margin-bottom: 0.38rem;
   counter-increment: journey;
 }
 
@@ -275,14 +275,14 @@ a:focus {
   content: counter(journey);
   position: absolute;
   left: 0;
-  top: 0.48rem;
-  width: 1.65rem;
-  height: 1.65rem;
+  top: 0.4rem;
+  width: 1.18rem;
+  height: 1.18rem;
   border-radius: 999px;
-  background: #f4f9fb;
+  background: #f2f8fb;
   border: 1px solid #cfdfe6;
   color: #2f6a7c;
-  font-size: 0.78rem;
+  font-size: 0.68rem;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -292,28 +292,35 @@ a:focus {
 
 .journey-card {
   border: 1px solid #e5ecef;
-  border-radius: 12px;
-  padding: 0.58rem 0.78rem 0.56rem;
-  background: linear-gradient(180deg, #fcfeff 0%, #f8fbfd 100%);
-  box-shadow: 0 1px 0 rgba(28, 44, 56, 0.03);
+  border-left: 3px solid #d9e7ed;
+  border-radius: 8px;
+  padding: 0.46rem 0.62rem;
+  background: #fbfdfe;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.35rem 0.75rem;
+  flex-wrap: wrap;
 }
 
 .journey-role {
   margin: 0;
   color: var(--heading);
-  font-size: 0.98rem;
+  font-size: 0.91rem;
   font-weight: 700;
-  line-height: 1.35;
+  line-height: 1.24;
+  flex: 1 1 320px;
 }
 
 .journey-meta {
-  margin: 0.16rem 0 0;
+  margin: 0;
   color: var(--muted);
-  font-size: 0.86rem;
+  font-size: 0.81rem;
+  line-height: 1.2;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 0.22rem;
+  gap: 0.2rem;
 }
 
 .journey-arrow {
@@ -432,13 +439,14 @@ a:focus {
   }
 
   .journey-item {
-    padding-left: 2.45rem;
-    margin-bottom: 0.5rem;
+    padding-left: 1.85rem;
+    margin-bottom: 0.36rem;
   }
 
   .journey-item::before {
-    width: 1.55rem;
-    height: 1.55rem;
+    width: 1.08rem;
+    height: 1.08rem;
+    font-size: 0.64rem;
   }
 }
 
@@ -466,6 +474,14 @@ a:focus {
   }
 
   .journey-card {
-    padding: 0.56rem 0.64rem;
+    padding: 0.5rem 0.56rem;
+  }
+
+  .journey-role {
+    flex-basis: 100%;
+  }
+
+  .journey-meta {
+    flex-basis: 100%;
   }
 }
