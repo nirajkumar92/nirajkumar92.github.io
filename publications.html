@@ -19,7 +19,7 @@
     ]
   }
   </script>
-  
+
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://nirajkumar92.github.io/publications.html">
@@ -36,59 +36,102 @@
 </head>
 
 <body>
-  <div class="nav">
-    <div class="inner">
-      <div class="brand"><a href="/index.html">Niraj Kumar</a></div>
-      <a class="nav-link" href="/publications.html" aria-current="page">Publications</a>
-      <a class="nav-link" href="/cv.html">CV</a>
-      <a class="nav-link" href="/misc.html">Miscellaneous</a>
+  <nav class="skip-links">
+    <ul>
+      <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+      <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+      <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+    </ul>
+  </nav>
+
+  <div class="masthead">
+    <div class="masthead__inner-wrap">
+      <div class="masthead__menu">
+        <nav id="site-nav" class="greedy-nav">
+          <a class="site-title" href="/index.html">Niraj Kumar</a>
+          <ul class="visible-links">
+            <li><a href="/publications.html" aria-current="page">Publications</a></li>
+            <li><a href="/cv.html">CV</a></li>
+            <li><a href="/misc.html">Miscellaneous</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </div>
 
-  <div class="container">
-    <h1>Publications</h1>
-    <p>
-      You can find my full list of publications on
-      <a href="https://scholar.google.com/citations?user=RTUHCCQAAAAJ&hl=en" target="_blank">Google Scholar</a>.
-      My Ph.D. thesis titled <em>Design, analysis and implementation of advanced quantum communication protocols</em> can be accessed <a href="/assets/Niraj_kumar_thesis.pdf" target="_blank">here</a>.
-    </p>
+  <div class="initial-content">
+    <div id="main" role="main">
+      <div class="layout--single">
+        <aside class="sidebar sticky">
+          <div class="author__avatar">
+            <img src="/assets/profile.jpg" alt="Niraj Kumar portrait">
+          </div>
+          <div class="author__content">
+            <h3 class="author__name">Niraj Kumar</h3>
+            <p class="author__bio">Applied Research Director at JPMorganChase (GTAR), New York.</p>
+          </div>
+          <div class="author__urls-wrapper">
+            <ul class="author__urls">
+              <li>New York, United States</li>
+              <li>JPMorgan Chase</li>
+              <li><a href="mailto:nirajhariom@gmail.com">Email</a></li>
+              <li><a href="https://www.linkedin.com/in/nirajkumar92/" target="_blank">LinkedIn</a></li>
+              <li><a href="https://x.com/niraj_kum" target="_blank">Twitter</a></li>
+              <li><a href="https://scholar.google.com/citations?user=RTUHCCQAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
+            </ul>
+          </div>
+        </aside>
 
-    <h2>Talks and Conferences</h2>
-    <ul class="square">
-      <li>
-        <a href="https://neurips.cc/" target="_blank">NeurIPS 2025</a> —
-        acceptance of the explainability work
-        (<a href="https://arxiv.org/abs/2506.05216" target="_blank">paper</a>).
-      </li>
-      <li>
-        <strong>Speaker acceptances at:</strong>
-        <ul class="square">
-          <li><a href="https://qtml2025.cqt.sg/" target="_blank">Quantum Techniques in Machine Learning (QTML)</a> — 2024</li>
-          <li><a href="https://qipconference.org/" target="_blank">Quantum Information Processing (QIP)</a> — 2024</li>
-          <li><a href="https://march.aps.org/" target="_blank">APS March Meeting</a> — 2023, 2022</li>
-          <li>Quantum Tech Conference — 2022</li>
-          <li>RE•Work Deep Learning Summit — 2022</li>
-          <li>QCrypt Conference — 2019</li>
-          <li>Challenges in Quantum Information Science (CQIS) — 2018</li>
-          <li>GdR IQFA 6th Colloquium — 2015</li>
-          <li>Quantum Information Processing & Communications — 2015</li>
-        </ul>
-      </li>
-      <li>
-        <strong>Poster acceptances at:</strong>
-        <ul class="square">
-          <li><a href="https://qipconference.org/" target="_blank">Quantum Information Processing (QIP)</a> — 2024</li>
-          <li><a href="https://qtml2025.cqt.sg/" target="_blank">Quantum Techniques in Machine Learning (QTML)</a> — 2023</li>
-          <li>GdR IQFA — 2017</li>
-          <li>QCrypt Conference — 2016</li>
-          <li>Theory of Quantum Computation, Communication and Cryptography (TQC) — 2016</li>
-        </ul>
-      </li>
-      
-    </ul>
+        <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+          <header class="page__header">
+            <h1 class="page__title p-name" itemprop="headline">Publications</h1>
+          </header>
 
-    <div class="footer">© 2025 Niraj Kumar</div>
+          <section class="page__content e-content" itemprop="text">
+            <p>
+              You can find my full list of publications on
+              <a href="https://scholar.google.com/citations?user=RTUHCCQAAAAJ&hl=en" target="_blank">Google Scholar</a>.
+              My Ph.D. thesis titled <em>Design, analysis and implementation of advanced quantum communication protocols</em> can be accessed <a href="/assets/Niraj_kumar_thesis.pdf" target="_blank">here</a>.
+            </p>
+
+            <h2>Talks and Conferences</h2>
+            <ul>
+              <li>
+                <a href="https://neurips.cc/" target="_blank">NeurIPS 2025</a> —
+                acceptance of the explainability work
+                (<a href="https://arxiv.org/abs/2506.05216" target="_blank">paper</a>).
+              </li>
+              <li>
+                <strong>Speaker acceptances at:</strong>
+                <ul>
+                  <li><a href="https://qtml2025.cqt.sg/" target="_blank">Quantum Techniques in Machine Learning (QTML)</a> — 2024</li>
+                  <li><a href="https://qipconference.org/" target="_blank">Quantum Information Processing (QIP)</a> — 2024</li>
+                  <li><a href="https://march.aps.org/" target="_blank">APS March Meeting</a> — 2023, 2022</li>
+                  <li>Quantum Tech Conference — 2022</li>
+                  <li>RE•Work Deep Learning Summit — 2022</li>
+                  <li>QCrypt Conference — 2019</li>
+                  <li>Challenges in Quantum Information Science (CQIS) — 2018</li>
+                  <li>GdR IQFA 6th Colloquium — 2015</li>
+                  <li>Quantum Information Processing & Communications — 2015</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Poster acceptances at:</strong>
+                <ul>
+                  <li><a href="https://qipconference.org/" target="_blank">Quantum Information Processing (QIP)</a> — 2024</li>
+                  <li><a href="https://qtml2025.cqt.sg/" target="_blank">Quantum Techniques in Machine Learning (QTML)</a> — 2023</li>
+                  <li>GdR IQFA — 2017</li>
+                  <li>QCrypt Conference — 2016</li>
+                  <li>Theory of Quantum Computation, Communication and Cryptography (TQC) — 2016</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+
+          <footer class="page__footer" id="footer">© 2025 Niraj Kumar</footer>
+        </article>
+      </div>
+    </div>
   </div>
 </body>
 </html>
-
