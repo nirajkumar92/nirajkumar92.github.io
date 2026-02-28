@@ -73,109 +73,130 @@
   <meta name="twitter:image" content="https://nirajkumar92.github.io/assets/headshot.jpg">
 
   <link rel="stylesheet" href="/assets/style.css">
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <style>
-    ol, ul { padding-left:1.2rem; }
-  </style>
 </head>
 
 <body>
-  <div class="nav">
-    <div class="inner">
-      <div class="brand"><a href="/index.html">Niraj Kumar</a></div>
-      <a class="nav-link" href="/publications.html">Publications</a>
-      <a class="nav-link" href="/cv.html">CV</a>
-      <a class="nav-link" href="/misc.html">Miscellaneous</a>
+  <nav class="skip-links">
+    <ul>
+      <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+      <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+      <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+    </ul>
+  </nav>
+
+  <div class="masthead">
+    <div class="masthead__inner-wrap">
+      <div class="masthead__menu">
+        <nav id="site-nav" class="greedy-nav">
+          <a class="site-title" href="/index.html">Niraj Kumar</a>
+          <ul class="visible-links">
+            <li><a href="/publications.html">Publications</a></li>
+            <li><a href="/cv.html">CV</a></li>
+            <li><a href="/misc.html">Miscellaneous</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </div>
 
-  <div class="container">
-    <header>
-      <img src="/assets/profile.jpg" alt="Niraj Kumar portrait">
-      <div>
-        <h1>Niraj Kumar</h1>
-        <div class="info-grid">
-          <i class="fa-solid fa-location-dot"></i><span>New York, United States</span>
-          <i class="fa-solid fa-building"></i><span>JPMorgan Chase</span>
-          <i class="fa-solid fa-envelope"></i><a href="mailto:nirajhariom@gmail.com">Email</a>
-          <i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/nirajkumar92/" target="_blank">LinkedIn</a>
-          <i class="fa-brands fa-x-twitter"></i><a href="https://x.com/niraj_kum" target="_blank">Twitter</a>
-          <i class="fa-brands fa-google"></i><a href="https://scholar.google.com/citations?user=RTUHCCQAAAAJ&hl=en" target="_blank">Google Scholar</a>
-        </div>
+  <div class="initial-content">
+    <div id="main" role="main">
+      <div class="layout--single">
+        <aside class="sidebar sticky">
+          <div class="author__avatar">
+            <img src="/assets/profile.jpg" alt="Niraj Kumar portrait">
+          </div>
+          <div class="author__content">
+            <h3 class="author__name">Niraj Kumar</h3>
+            <p class="author__bio">Applied Research Director at JPMorganChase (GTAR), New York.</p>
+          </div>
+          <div class="author__urls-wrapper">
+            <ul class="author__urls">
+              <li>New York, United States</li>
+              <li>JPMorgan Chase</li>
+              <li><a href="mailto:nirajhariom@gmail.com">Email</a></li>
+              <li><a href="https://www.linkedin.com/in/nirajkumar92/" target="_blank">LinkedIn</a></li>
+              <li><a href="https://x.com/niraj_kum" target="_blank">Twitter</a></li>
+              <li><a href="https://scholar.google.com/citations?user=RTUHCCQAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
+            </ul>
+          </div>
+        </aside>
 
-        <p style="margin-top:1.2rem;">
-          I am a Researcher at <a href="https://www.jpmorganchase.com/" target="_blank">JPMorgan Chase</a>, serving as the Executive Director - Applied Research Director within the
-          <a href="https://www.jpmorgan.com/technology/artificial-intelligence/gtar" target="_blank">Global Technology Applied Research</a>
-          center. At this position, I lead the
-          <strong>Quantum-Inspired Algorithms</strong> group, which develops advanced classical methods for big-data analytics, machine learning (including LLMs), and constrained optimization problems.
-          Previously, I have worked as the quantum algorithms developer at the French quantum startup
-          <a href="https://pasqal.com/" target="_blank">Pasqal</a>, and at
-          <a href="https://www.paypal.com/" target="_blank">PayPal</a>.
-        </p>
+        <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+          <header class="page__header">
+            <h1 class="page__title p-name" itemprop="headline">Niraj Kumar</h1>
+          </header>
 
-        <p>
-          I received my Ph.D. in Quantum Computing from
-          <a href="https://www.telecom-paris.fr/en/home" target="_blank">Télécom ParisTech</a>,
-          and have a Post-Doc from the
-          <a href="https://www.ed.ac.uk/informatics" target="_blank">School of Informatics</a>,
-          <a href="https://www.ed.ac.uk/" target="_blank">University of Edinburgh</a>.
-          I received my Bachelor’s and Master’s degrees from the
-          <a href="https://iitk.ac.in/phy/" target="_blank">Physics Department</a> at
-          <a href="https://www.iitk.ac.in/" target="_blank">Indian Institute of Technology (IIT) Kanpur</a>.
-        </p>
+          <section class="page__content e-content" itemprop="text">
+            <p>
+              I am a Researcher at <a href="https://www.jpmorganchase.com/" target="_blank">JPMorgan Chase</a>, serving as the Executive Director - Applied Research Director within the
+              <a href="https://www.jpmorgan.com/technology/artificial-intelligence/gtar" target="_blank">Global Technology Applied Research</a>
+              center. At this position, I lead the
+              <strong>Quantum-Inspired Algorithms</strong> group, which develops advanced classical methods for big-data analytics, machine learning (including LLMs), and constrained optimization problems.
+              Previously, I have worked as the quantum algorithms developer at the French quantum startup
+              <a href="https://pasqal.com/" target="_blank">Pasqal</a>, and at
+              <a href="https://www.paypal.com/" target="_blank">PayPal</a>.
+            </p>
+
+            <p>
+              I received my Ph.D. in Quantum Computing from
+              <a href="https://www.telecom-paris.fr/en/home" target="_blank">Télécom ParisTech</a>,
+              and have a Post-Doc from the
+              <a href="https://www.ed.ac.uk/informatics" target="_blank">School of Informatics</a>,
+              <a href="https://www.ed.ac.uk/" target="_blank">University of Edinburgh</a>.
+              I received my Bachelor’s and Master’s degrees from the
+              <a href="https://iitk.ac.in/phy/" target="_blank">Physics Department</a> at
+              <a href="https://www.iitk.ac.in/" target="_blank">Indian Institute of Technology (IIT) Kanpur</a>.
+            </p>
+
+            <section>
+              <h2>About</h2>
+              <p>
+                Niraj Kumar is an <strong>Applied Research Director</strong> at <strong>JPMorganChase (Global Technology Applied Research)</strong> in New York, with a focus on
+                quantum-inspired algorithms, quantum algorithms, randomized algorithms, machine learning, and optimization.
+              </p>
+            </section>
+
+            <section>
+              <h2>Research Interests</h2>
+
+              <h3>Quantum-Inspired Algorithms</h3>
+              <p>
+                My recent research focuses on <strong>quantum-inspired classical algorithms</strong> that leverage ideas from quantum computation to design efficient classical methods for large-scale problems:
+              </p>
+              <ul>
+                <li><b>Randomized NLA techniques for big-data analytics</b>: fast provable clustering <a href="https://arxiv.org/abs/2504.20982" target="_blank">[1]</a>, coreset selection and regression <a href="https://arxiv.org/abs/2506.03070" target="_blank">[2]</a>, <a href="https://arxiv.org/abs/2508.13108" target="_blank">[3]</a>.</li>
+                <li><b>Classical techniques for fast discrete optimization</b> <a href="https://arxiv.org/abs/2504.00987" target="_blank">[4]</a>.</li>
+                <li><b>Tensor-based techniques</b> for high-dimensional integration and LLM compression <a href="https://arxiv.org/abs/2506.09105" target="_blank">[5]</a>.</li>
+                <li><b>Machine Learning / LLM</b>: classical algorithmic techniques for explainability, compression, and fine-tuning <a href="https://arxiv.org/abs/2506.05216" target="_blank">[6]</a>.</li>
+              </ul>
+
+              <h3>Quantum Research</h3>
+              <p>I have a diverse research experience across both theoretical and experimental aspects of quantum computing:</p>
+              <ul>
+                <li><b>Quantum Algorithms:</b> algorithms for machine learning — both variational <a href="https://iopscience.iop.org/article/10.1088/2058-9565/abd3db/meta" target="_blank">[7]</a>, <a href="https://quantum-journal.org/papers/q-2023-01-26-909/" target="_blank">[8]</a> — and provable methods based on quantum linear-algebra subroutines <a href="https://arxiv.org/abs/1312.4116" target="_blank">[9]</a>, <a href="https://quantum-journal.org/papers/q-2025-01-13-1588/" target="_blank">[10]</a>, <a href="https://arxiv.org/abs/2504.20982" target="_blank">[11]</a>; as well as optimization via QAOA <a href="https://www.science.org/doi/full/10.1126/sciadv.adm6761" target="_blank">[12]</a>, <a href="https://quantum-journal.org/papers/q-2022-11-17-861/" target="_blank">[13]</a>.</li>
+                <li><b>Privacy in Machine Learning using Quantum:</b> frameworks for privacy in distributed (federated) learning <a href="https://arxiv.org/abs/2309.13002" target="_blank">[14]</a>, <a href="https://www.nature.com/articles/s41534-025-01022-z" target="_blank">[15]</a>, <a href="https://iopscience.iop.org/article/10.1088/2058-9565/ad40cc/meta" target="_blank">[16]</a>.</li>
+                <li><b>Quantum Information and Cryptography:</b> quantum vs classical communication complexity <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.95.032337" target="_blank">[17]</a>; quantum money <a href="https://www.mdpi.com/2410-387X/3/4/26" target="_blank">[18]</a>; authentication <a href="https://dl.acm.org/doi/abs/10.1145/3484197" target="_blank">[19]</a>; and quantum cloning <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.105.042604" target="_blank">[20]</a>.</li>
+                <li><b>Quantum Advantage Demonstrations:</b> quantum photonic state systems used show advantage in communication complexity <a href="https://www.nature.com/articles/s41467-019-12139-z" target="_blank">[21]</a>, and efficient verification of non-interactive zero-knowledge proofs <a href="https://www.nature.com/articles/s41467-021-21119-1" target="_blank">[22]</a>. More recently, I have contributed to quantum advantage demonstrations in optimization <a href="https://www.science.org/doi/full/10.1126/sciadv.adm6761" target="_blank">[23]</a>, certified randomness generation <a href="https://www.nature.com/articles/s41586-025-08737-1" target="_blank">[24]</a>, and advantage in streaming settings <a href="https://arxiv.org/abs/2511.03689" target="_blank">[25]</a>.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Press Coverage of Research Works</h2>
+              <ul>
+                <li>Mention in the <a href="https://www.wsj.com/articles/the-next-big-quantum-computer-has-arrived-c1053c2a" target="_blank">Wall Street Journal</a> article of the first realization of <a href="https://arxiv.org/abs/2511.03689" target="_blank">quantum streaming algorithm</a> using Quantinuum ion-trap hardware.</li>
+                <li><a href="https://www.bloomberg.com/news/articles/2025-03-26/jpmorgan-says-quantum-experiment-generated-truly-random-numbers" target="_blank">Bloomberg coverage</a> of the <a href="https://www.nature.com/articles/s41586-025-08737-1" target="_blank">Nature paper</a> on the first realization of certified quantum randomness using Quantinuum ion-trap hardware.</li>
+                <li><a href="https://www.wired.com/story/its-not-a-myth-quantum-messages-really-can-travel-faster/" target="_blank">Wired</a> and <a href="https://www.quantamagazine.org/milestone-experiment-proves-quantum-communication-really-is-faster-20181219/" target="_blank">Quanta Magazine</a> coverage of the <a href="https://www.nature.com/articles/s41467-019-12139-z" target="_blank">Nature paper</a> on quantum communication advantage using photonics hardware.</li>
+                <li>Featured in a <a href="https://www.zdnet.com/article/quantum-computers-could-one-day-reveal-all-of-our-secrets/" target="_blank">ZDNet article</a> on the threat of quantum computers to modern cryptography.</li>
+                <li><a href="http://www.2physics.com/2015/02/nonlocality-and-conflicting-interest.html" target="_blank">2Physics magazine</a> coverage of the <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.114.020401" target="_blank">Physical Review Letter</a> paper showing quantum advantage in conflicting interest games.</li>
+              </ul>
+            </section>
+          </section>
+
+          <footer class="page__footer" id="footer">© 2025 Niraj Kumar</footer>
+        </article>
       </div>
-    </header>
-
-    <section>
-      <h2>About</h2>
-      <p>
-        Niraj Kumar is an <strong>Applied Research Director</strong> at <strong>JPMorganChase (Global Technology Applied Research)</strong> in New York, with a focus on
-        quantum-inspired algorithms, quantum algorithms, randomized algorithms, machine learning, and optimization.
-      </p>
-    </section>
-
-    <!-- RESEARCH INTERESTS (lists now square bullets) -->
-    <section>
-      <h2>Research Interests</h2>
-
-      <h3>Quantum-Inspired Algorithms</h3>
-      <p>
-        My recent research focuses on <strong>quantum-inspired classical algorithms</strong> that leverage ideas from quantum computation to design efficient classical methods for large-scale problems:
-      </p>
-      <ul class="square">
-        <li><b>Randomized NLA techniques for big-data analytics</b>: fast provable clustering <a href="https://arxiv.org/abs/2504.20982" target="_blank">[1]</a>, coreset selection and regression <a href="https://arxiv.org/abs/2506.03070" target="_blank">[2]</a>, <a href="https://arxiv.org/abs/2508.13108" target="_blank">[3]</a>.</li>
-        <li><b>Classical techniques for fast discrete optimization</b> <a href="https://arxiv.org/abs/2504.00987" target="_blank">[4]</a>.</li>
-        <li><b>Tensor-based techniques</b> for high-dimensional integration and LLM compression <a href="https://arxiv.org/abs/2506.09105" target="_blank">[5]</a>.</li>
-        <li><b>Machine Learning / LLM</b>: classical algorithmic techniques for explainability, compression, and fine-tuning <a href="https://arxiv.org/abs/2506.05216" target="_blank">[6]</a>.</li>
-      </ul>
-
-      <h3>Quantum Research</h3>
-      <p>I have a diverse research experience across both theoretical and experimental aspects of quantum computing:</p>
-      <ul class="square">
-        <li><b>Quantum Algorithms:</b> algorithms for machine learning — both variational <a href="https://iopscience.iop.org/article/10.1088/2058-9565/abd3db/meta" target="_blank">[7]</a>, <a href="https://quantum-journal.org/papers/q-2023-01-26-909/" target="_blank">[8]</a> — and provable methods based on quantum linear-algebra subroutines <a href="https://arxiv.org/abs/1312.4116" target="_blank">[9]</a>, <a href="https://quantum-journal.org/papers/q-2025-01-13-1588/" target="_blank">[10]</a>, <a href="https://arxiv.org/abs/2504.20982" target="_blank">[11]</a>; as well as optimization via QAOA <a href="https://www.science.org/doi/full/10.1126/sciadv.adm6761" target="_blank">[12]</a>, <a href="https://quantum-journal.org/papers/q-2022-11-17-861/" target="_blank">[13]</a>.</li>
-        <li><b>Privacy in Machine Learning using Quantum:</b> frameworks for privacy in distributed (federated) learning <a href="https://arxiv.org/abs/2309.13002" target="_blank">[14]</a>, <a href="https://www.nature.com/articles/s41534-025-01022-z" target="_blank">[15]</a>, <a href="https://iopscience.iop.org/article/10.1088/2058-9565/ad40cc/meta" target="_blank">[16]</a>.</li>
-        <li><b>Quantum Information and Cryptography:</b> quantum vs classical communication complexity <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.95.032337" target="_blank">[17]</a>; quantum money <a href="https://www.mdpi.com/2410-387X/3/4/26" target="_blank">[18]</a>; authentication <a href="https://dl.acm.org/doi/abs/10.1145/3484197" target="_blank">[19]</a>; and quantum cloning <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.105.042604" target="_blank">[20]</a>.</li>
-        <li><b>Quantum Advantage Demonstrations:</b> quantum photonic state systems used show advantage in communication complexity <a href="https://www.nature.com/articles/s41467-019-12139-z" target="_blank">[21]</a>, and efficient verification of non-interactive zero-knowledge proofs <a href="https://www.nature.com/articles/s41467-021-21119-1" target="_blank">[22]</a>. More recently, I have contributed to quantum advantage demonstrations in optimization <a href="https://www.science.org/doi/full/10.1126/sciadv.adm6761" target="_blank">[23]</a>, certified randomness generation <a href="https://www.nature.com/articles/s41586-025-08737-1" target="_blank">[24]</a>, and advantage in streaming settings <a href="https://arxiv.org/abs/2511.03689" target="_blank">[25]</a>.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Press Coverage of Research Works</h2>
-      <ul class="square">
-        <li>Mention in the <a href="https://www.wsj.com/articles/the-next-big-quantum-computer-has-arrived-c1053c2a" target="_blank">Wall Street Journal</a> article of the first realization of <a href="https://arxiv.org/abs/2511.03689" target="_blank">quantum streaming algorithm</a> using Quantinuum ion-trap hardware.</li>
-        <li><a href="https://www.bloomberg.com/news/articles/2025-03-26/jpmorgan-says-quantum-experiment-generated-truly-random-numbers" target="_blank">Bloomberg coverage</a> of the <a href="https://www.nature.com/articles/s41586-025-08737-1" target="_blank">Nature paper</a> on the first realization of certified quantum randomness using Quantinuum ion-trap hardware.</li>
-        <li><a href="https://www.wired.com/story/its-not-a-myth-quantum-messages-really-can-travel-faster/" target="_blank">Wired</a> and <a href="https://www.quantamagazine.org/milestone-experiment-proves-quantum-communication-really-is-faster-20181219/" target="_blank">Quanta Magazine</a> coverage of the <a href="https://www.nature.com/articles/s41467-019-12139-z" target="_blank">Nature paper</a> on quantum communication advantage using photonics hardware.</li>
-        <li>Featured in a <a href="https://www.zdnet.com/article/quantum-computers-could-one-day-reveal-all-of-our-secrets/" target="_blank">ZDNet article</a> on the threat of quantum computers to modern cryptography.</li>
-        <li><a href="http://www.2physics.com/2015/02/nonlocality-and-conflicting-interest.html" target="_blank">2Physics magazine</a> coverage of the <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.114.020401" target="_blank">Physical Review Letter</a> paper showing quantum advantage in conflicting interest games.</li>
-      </ul>
-    </section>
-
-    <div class="footer">© 2025 Niraj Kumar</div>
+    </div>
   </div>
 </body>
 </html>
-
-
-
-
