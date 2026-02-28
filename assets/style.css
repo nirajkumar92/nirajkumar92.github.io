@@ -246,6 +246,82 @@ a:focus {
   color: var(--muted);
 }
 
+.journey-list {
+  margin: 1rem 0 1.5rem;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+.journey-list::before {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  top: 0.4rem;
+  bottom: 0.4rem;
+  width: 2px;
+  background: linear-gradient(#c6d5dc, #e7eef2);
+}
+
+.journey-item {
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1fr);
+  gap: 0.95rem;
+  align-items: start;
+  margin-bottom: 0.8rem;
+}
+
+.journey-index {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  background: #f2f7f9;
+  border: 1px solid #d5e2e7;
+  color: #2f6a7c;
+  font-weight: 700;
+  font-size: 0.88rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.journey-card {
+  border: 1px solid #e5ecef;
+  border-radius: 10px;
+  padding: 0.75rem 0.95rem;
+  background: #fbfdfe;
+  position: relative;
+}
+
+.journey-card::before {
+  content: "->";
+  position: absolute;
+  left: -1.1rem;
+  top: 0.82rem;
+  color: #84a5b1;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.journey-role {
+  margin: 0;
+  color: var(--heading);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.journey-meta {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.journey-meta a {
+  font-weight: 700;
+}
+
 .publication-year {
   margin: 1.8rem 0 0.6rem;
   font-size: 1.3rem;
@@ -351,6 +427,21 @@ a:focus {
   .author__urls-wrapper {
     grid-column: 1 / -1;
   }
+
+  .journey-list::before {
+    left: 0.85rem;
+  }
+
+  .journey-item {
+    grid-template-columns: 1.7rem minmax(0, 1fr);
+    gap: 0.75rem;
+  }
+
+  .journey-index {
+    width: 1.7rem;
+    height: 1.7rem;
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 640px) {
@@ -374,5 +465,14 @@ a:focus {
   .author__avatar img {
     width: 96px;
     height: 96px;
+  }
+
+  .journey-card {
+    padding: 0.7rem 0.75rem;
+  }
+
+  .journey-card::before {
+    left: -0.95rem;
+    top: 0.78rem;
   }
 }
