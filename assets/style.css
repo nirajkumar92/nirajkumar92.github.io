@@ -1,31 +1,223 @@
-:root{
-  --bg:#ffffff;
-  --text:#222;
-  --muted:#555;
-  --link:#0033cc;
-  --border:#e6e6e6;
-  --max:900px;
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+:root {
+  --bg: #f8f9fb;
+  --surface: #ffffff;
+  --text: #222831;
+  --muted: #5e6778;
+  --heading: #1f2430;
+  --link: #2863b2;
+  --link-hover: #1f4d8b;
+  --border: #d7dde8;
+  --max: 1024px;
 }
-*{box-sizing:border-box}
-html,body{
-  margin:0; padding:0;
-  background:var(--bg); color:var(--text);
-  font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+
+* {
+  box-sizing: border-box;
 }
-a{color:var(--link); text-decoration:none}
-a:hover{text-decoration:underline}
-.container{max-width:var(--max); margin:2rem auto; padding:0 1rem}
-.nav{border-bottom:1px solid var(--border); background:#fff; position:sticky; top:0; z-index:10}
-.nav .inner{max-width:var(--max); margin:0 auto; display:flex; gap:1rem; align-items:center; padding:0.9rem 1rem}
-.brand{margin-right:auto; font-weight:700}
-header{display:flex; flex-wrap:wrap; align-items:center; gap:1.5rem; margin:1.5rem 0 2rem}
-header img{width:220px; height:auto; border-radius:8px}
-h1{font-size:2.2rem; margin:0 0 .3rem}
-h2{margin-top:2rem}
-.small{color:var(--muted); font-size:.95rem}
-.footer{margin-top:3rem; padding:1rem; border-top:1px solid var(--border); text-align:center; color:var(--muted)}
-ul{margin-top:.5rem}
-ol{padding-left:1.2rem}
-.card{border:1px solid var(--border); border-radius:10px; padding:1rem; background:#fff}
-.list{display:grid; gap:1rem}
-.pub .meta{color:var(--muted); font-size:.95rem; margin-top:.2rem}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+.nav {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav .inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0.95rem 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  flex-wrap: wrap;
+}
+
+.brand {
+  margin-right: auto;
+  font-weight: 900;
+  letter-spacing: 0.015em;
+}
+
+.brand a {
+  color: var(--heading);
+}
+
+.nav-link {
+  font-size: 0.96rem;
+  color: #3f4758;
+  padding: 0.1rem 0;
+}
+
+.nav-link[aria-current="page"] {
+  color: var(--heading);
+  font-weight: 700;
+}
+
+.container {
+  max-width: var(--max);
+  margin: 2.2rem auto 3rem;
+  padding: 0 1.2rem;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 0 0 2rem;
+  padding: 0 0 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+header img {
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--heading);
+  line-height: 1.28;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 2.45rem);
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.55rem;
+  margin: 2rem 0 0.6rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid #e8edf5;
+}
+
+h3 {
+  font-size: 1.16rem;
+  margin: 1.2rem 0 0.35rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+section {
+  margin-top: 1.8rem;
+}
+
+ul,
+ol {
+  margin: 0.45rem 0 1rem;
+  padding-left: 1.3rem;
+}
+
+li {
+  margin-bottom: 0.45rem;
+}
+
+ul.square {
+  list-style-type: square;
+  padding-left: 1.5rem;
+}
+
+.small {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 1rem 1.1rem;
+}
+
+.list {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.pub .meta {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-top: 0.2rem;
+}
+
+.footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.92rem;
+  text-align: center;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 0.45rem 0.65rem;
+  font-size: 0.95rem;
+  color: #424b5d;
+  margin-top: 0.55rem;
+}
+
+.info-grid i {
+  color: var(--link);
+  width: 18px;
+  text-align: center;
+}
+
+.info-grid a {
+  color: var(--link);
+}
+
+@media (max-width: 820px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+
+  .nav .inner {
+    gap: 0.8rem;
+  }
+
+  .brand {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0.2rem;
+  }
+
+  header {
+    gap: 1.2rem;
+    padding-bottom: 1.4rem;
+  }
+
+  header img {
+    width: 180px;
+  }
+}
