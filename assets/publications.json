@@ -1,11 +1,200 @@
 [
   {
-    "title": "See full list on Google Scholar",
-    "authors": "Niraj Kumar",
-    "venue": "Profile",
-    "year": "",
+    "title": "Fast provable clustering for big-data analytics (quantum-inspired)",
+    "authors": "Niraj Kumar et al.",
+    "venue": "arXiv",
+    "year": 2025,
     "links": [
-      {"label":"Google Scholar","url":"https://scholar.google.com/citations?user=RTUHCCQAAAAJ&hl=en"}
+      { "label": "Paper", "url": "https://arxiv.org/abs/2504.20982" }
+    ]
+  },
+  {
+    "title": "Coreset selection and regression with quantum-inspired methods",
+    "authors": "Niraj Kumar et al.",
+    "venue": "arXiv",
+    "year": 2025,
+    "links": [
+      { "label": "Paper", "url": "https://arxiv.org/abs/2506.03070" }
+    ]
+  },
+  {
+    "title": "Quantum-inspired methods for large-scale learning and regression",
+    "authors": "Niraj Kumar et al.",
+    "venue": "arXiv",
+    "year": 2025,
+    "links": [
+      { "label": "Paper", "url": "https://arxiv.org/abs/2508.13108" }
+    ]
+  },
+  {
+    "title": "Fast discrete optimization with classical algorithmic techniques",
+    "authors": "Niraj Kumar et al.",
+    "venue": "arXiv",
+    "year": 2025,
+    "links": [
+      { "label": "Paper", "url": "https://arxiv.org/abs/2504.00987" }
+    ]
+  },
+  {
+    "title": "Tensor-based methods for high-dimensional integration and LLM compression",
+    "authors": "Niraj Kumar et al.",
+    "venue": "arXiv",
+    "year": 2025,
+    "links": [
+      { "label": "Paper", "url": "https://arxiv.org/abs/2506.09105" }
+    ]
+  },
+  {
+    "title": "Classical techniques for explainability, compression, and fine-tuning in ML/LLMs",
+    "authors": "Niraj Kumar et al.",
+    "venue": "arXiv",
+    "year": 2025,
+    "links": [
+      { "label": "Paper", "url": "https://arxiv.org/abs/2506.05216" }
+    ]
+  },
+  {
+    "title": "Provable quantum linear-algebra methods for machine learning",
+    "authors": "Niraj Kumar et al.",
+    "venue": "Quantum Journal",
+    "year": 2025,
+    "links": [
+      { "label": "Paper", "url": "https://quantum-journal.org/papers/q-2025-01-13-1588/" }
+    ]
+  },
+  {
+    "title": "Privacy in distributed/federated learning with quantum frameworks",
+    "authors": "Niraj Kumar et al.",
+    "venue": "npj Quantum Information",
+    "year": 2025,
+    "links": [
+      { "label": "Paper", "url": "https://www.nature.com/articles/s41534-025-01022-z" }
+    ]
+  },
+  {
+    "title": "Certified quantum randomness generation",
+    "authors": "Niraj Kumar et al.",
+    "venue": "Nature",
+    "year": 2025,
+    "links": [
+      { "label": "Paper", "url": "https://www.nature.com/articles/s41586-025-08737-1" }
+    ]
+  },
+  {
+    "title": "Quantum advantage in streaming settings",
+    "authors": "Niraj Kumar et al.",
+    "venue": "arXiv",
+    "year": 2025,
+    "links": [
+      { "label": "Paper", "url": "https://arxiv.org/abs/2511.03689" }
+    ]
+  },
+  {
+    "title": "Quantum advantage demonstrations in optimization",
+    "authors": "Niraj Kumar et al.",
+    "venue": "Science Advances",
+    "year": 2024,
+    "links": [
+      { "label": "Paper", "url": "https://www.science.org/doi/full/10.1126/sciadv.adm6761" }
+    ]
+  },
+  {
+    "title": "Variational quantum methods for machine learning",
+    "authors": "Niraj Kumar et al.",
+    "venue": "Quantum Journal",
+    "year": 2023,
+    "links": [
+      { "label": "Paper", "url": "https://quantum-journal.org/papers/q-2023-01-26-909/" }
+    ]
+  },
+  {
+    "title": "Privacy in machine learning using quantum frameworks",
+    "authors": "Niraj Kumar et al.",
+    "venue": "arXiv",
+    "year": 2023,
+    "links": [
+      { "label": "Paper", "url": "https://arxiv.org/abs/2309.13002" }
+    ]
+  },
+  {
+    "title": "QAOA-based methods for optimization",
+    "authors": "Niraj Kumar et al.",
+    "venue": "Quantum Journal",
+    "year": 2022,
+    "links": [
+      { "label": "Paper", "url": "https://quantum-journal.org/papers/q-2022-11-17-861/" }
+    ]
+  },
+  {
+    "title": "Quantum cloning and related information-theoretic limits",
+    "authors": "Niraj Kumar et al.",
+    "venue": "Physical Review A",
+    "year": 2022,
+    "links": [
+      { "label": "Paper", "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.105.042604" }
+    ]
+  },
+  {
+    "title": "Quantum machine learning in variational settings",
+    "authors": "Niraj Kumar et al.",
+    "venue": "Quantum Science and Technology",
+    "year": 2020,
+    "links": [
+      { "label": "Paper", "url": "https://iopscience.iop.org/article/10.1088/2058-9565/abd3db/meta" }
+    ]
+  },
+  {
+    "title": "Quantum authentication protocols",
+    "authors": "Niraj Kumar et al.",
+    "venue": "ACM",
+    "year": 2021,
+    "links": [
+      { "label": "Paper", "url": "https://dl.acm.org/doi/abs/10.1145/3484197" }
+    ]
+  },
+  {
+    "title": "Efficient verification of non-interactive zero-knowledge proofs",
+    "authors": "Niraj Kumar et al.",
+    "venue": "Nature Communications",
+    "year": 2021,
+    "links": [
+      { "label": "Paper", "url": "https://www.nature.com/articles/s41467-021-21119-1" }
+    ]
+  },
+  {
+    "title": "Quantum communication advantage using photonic systems",
+    "authors": "Niraj Kumar et al.",
+    "venue": "Nature Communications",
+    "year": 2019,
+    "links": [
+      { "label": "Paper", "url": "https://www.nature.com/articles/s41467-019-12139-z" }
+    ]
+  },
+  {
+    "title": "Quantum money and cryptographic primitives",
+    "authors": "Niraj Kumar et al.",
+    "venue": "Cryptography",
+    "year": 2019,
+    "links": [
+      { "label": "Paper", "url": "https://www.mdpi.com/2410-387X/3/4/26" }
+    ]
+  },
+  {
+    "title": "Quantum vs classical communication complexity",
+    "authors": "Niraj Kumar et al.",
+    "venue": "Physical Review A",
+    "year": 2017,
+    "links": [
+      { "label": "Paper", "url": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.95.032337" }
+    ]
+  },
+  {
+    "title": "Provable quantum linear-algebra subroutines for learning",
+    "authors": "Niraj Kumar et al.",
+    "venue": "arXiv",
+    "year": 2013,
+    "links": [
+      { "label": "Paper", "url": "https://arxiv.org/abs/1312.4116" }
     ]
   }
 ]
