@@ -19,7 +19,7 @@
     ]
   }
   </script>
-  
+
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://nirajkumar92.github.io/cv.html">
@@ -36,21 +36,66 @@
 </head>
 
 <body>
-  <div class="nav">
-    <div class="inner">
-      <div class="brand"><a href="/index.html">Niraj Kumar</a></div>
-      <a class="nav-link" href="/publications.html">Publications</a>
-      <a class="nav-link" href="/cv.html" aria-current="page">CV</a>
-      <a class="nav-link" href="/misc.html">Miscellaneous</a>
+  <nav class="skip-links">
+    <ul>
+      <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+      <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+      <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+    </ul>
+  </nav>
+
+  <div class="masthead">
+    <div class="masthead__inner-wrap">
+      <div class="masthead__menu">
+        <nav id="site-nav" class="greedy-nav">
+          <a class="site-title" href="/index.html">Niraj Kumar</a>
+          <ul class="visible-links">
+            <li><a href="/publications.html">Publications</a></li>
+            <li><a href="/cv.html" aria-current="page">CV</a></li>
+            <li><a href="/misc.html">Miscellaneous</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </div>
 
-  <div class="container">
-    <h1>CV</h1>
-    <!-- <p><a href="/assets/Niraj_Kumar_CV.pdf">Download CV (PDF)</a></p> -->
-    <p class="small">CV will be provided upon request.</p>
+  <div class="initial-content">
+    <div id="main" role="main">
+      <div class="layout--single">
+        <aside class="sidebar sticky">
+          <div class="author__avatar">
+            <img src="/assets/profile.jpg" alt="Niraj Kumar portrait">
+          </div>
+          <div class="author__content">
+            <h3 class="author__name">Niraj Kumar</h3>
+            <p class="author__bio">Applied Research Director at JPMorganChase (GTAR), New York.</p>
+          </div>
+          <div class="author__urls-wrapper">
+            <ul class="author__urls">
+              <li>New York, United States</li>
+              <li>JPMorgan Chase</li>
+              <li><a href="mailto:nirajhariom@gmail.com">Email</a></li>
+              <li><a href="https://www.linkedin.com/in/nirajkumar92/" target="_blank">LinkedIn</a></li>
+              <li><a href="https://x.com/niraj_kum" target="_blank">Twitter</a></li>
+              <li><a href="https://scholar.google.com/citations?user=RTUHCCQAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
+            </ul>
+          </div>
+        </aside>
 
-    <div class="footer">© 2025 Niraj Kumar</div>
+        <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+          <header class="page__header">
+            <h1 class="page__title p-name" itemprop="headline">CV</h1>
+          </header>
+
+          <section class="page__content e-content" itemprop="text">
+            <!-- <p><a href="/assets/Niraj_Kumar_CV.pdf">Download CV (PDF)</a></p> -->
+            <p class="small">CV will be provided upon request.</p>
+          </section>
+
+          <footer class="page__footer" id="footer">© 2025 Niraj Kumar</footer>
+        </article>
+      </div>
+    </div>
   </div>
 </body>
 </html>
