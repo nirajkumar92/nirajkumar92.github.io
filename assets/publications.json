@@ -1,5 +1,32 @@
 [
   {
+    "title": "CRUMB: Efficient Prior Fitted Network Inference via Distributionally Matched Context Batching",
+    "authors": "Jamie Heredge, Mattia J. Villani, Pranav Deshpande, Akshay Seshadri, Niraj Kumar",
+    "venue": "arXiv",
+    "year": 2026,
+    "links": [
+      { "label": "Paper", "url": "https://arxiv.org/abs/2606.11473" }
+    ]
+  },
+  {
+    "title": "Entropy Distribution as a Fingerprint for Hallucinations in Generative Models",
+    "authors": "Mattia J. Villani, Pranav Deshpande, Akshay Seshadri, Romina Yalovetzky, Niraj Kumar",
+    "venue": "arXiv",
+    "year": 2026,
+    "links": [
+      { "label": "Paper", "url": "https://arxiv.org/abs/2605.28264" }
+    ]
+  },
+  {
+    "title": "Anytime Training with Schedule-Free Spectral Optimization",
+    "authors": "Anuj Apte, Pranav Deshpande, Niraj Kumar, Shouvanik Chakrabarti, Junhyung Lyle Kim",
+    "venue": "arXiv",
+    "year": 2026,
+    "links": [
+      { "label": "Paper", "url": "https://arxiv.org/abs/2605.23061" }
+    ]
+  },
+  {
     "title": "Fast provable clustering for big-data analytics (quantum-inspired)",
     "authors": "Niraj Kumar et al.",
     "venue": "arXiv",
