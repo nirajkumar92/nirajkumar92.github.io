@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Disallow:
+
 Sitemap: https://nirajkumar92.github.io/sitemap.xml
