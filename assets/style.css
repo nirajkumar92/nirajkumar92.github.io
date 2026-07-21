@@ -1981,6 +1981,7 @@ body {
 }
 
 .page-hero {
+  padding: clamp(2.25rem, 4.5vw, 4.5rem);
   background:
     radial-gradient(circle at 88% 12%, rgba(169, 199, 195, 0.11), transparent 18rem),
     linear-gradient(125deg, #172536 0%, #29445b 100%);
@@ -1991,7 +1992,15 @@ body {
 }
 
 .page-hero h1 {
-  font-size: clamp(3rem, 6.5vw, 5.8rem);
+  max-width: 760px;
+  font-size: clamp(2.75rem, 4.6vw, 4.55rem);
+  line-height: 1.02;
+}
+
+.page-hero .lede {
+  max-width: 720px;
+  font-size: clamp(1.02rem, 1.5vw, 1.28rem);
+  line-height: 1.45;
 }
 
 .info-card,
@@ -2013,6 +2022,14 @@ body {
 
   .hero-copy h1 {
     font-size: clamp(2.75rem, 11vw, 4.15rem);
+  }
+
+  .page-hero h1 {
+    font-size: clamp(2.5rem, 9vw, 3.35rem);
+  }
+
+  .page-hero .lede {
+    font-size: 1.04rem;
   }
 
   .portrait-frame,
