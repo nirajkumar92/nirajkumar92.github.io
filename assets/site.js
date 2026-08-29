@@ -1,8 +1,10 @@
 (() => {
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const revealTargets = document.querySelectorAll(
+  const revealTargets = Array.from(document.querySelectorAll(
     ".section-heading, .credibility-row > div, .focus-panel, .featured-paper, .paper-rows a, .journey-track li, .press-tile, .info-card, .publication-list .paper-card, .misc-card"
-  );
+  )).filter((element) => (
+    !element.matches(".publications-page .content-main > .info-card:first-child")
+  ));
 
   if (!reducedMotion && "IntersectionObserver" in window) {
     revealTargets.forEach((element, index) => {

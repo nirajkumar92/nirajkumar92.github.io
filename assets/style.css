@@ -789,7 +789,7 @@ a {
 
 .featured-papers {
   display: grid;
-  grid-template-columns: 1.25fr 0.75fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
 }
 
@@ -1759,8 +1759,8 @@ body {
 }
 
 .hero-panel {
-  min-height: 660px;
-  padding: clamp(2.25rem, 4.5vw, 4.5rem);
+  min-height: 560px;
+  padding: clamp(2.1rem, 4vw, 4rem);
   background:
     radial-gradient(circle at 88% 14%, rgba(169, 199, 195, 0.11), transparent 21rem),
     linear-gradient(118deg, #142131 0%, #1a2b40 58%, #243d56 100%);
@@ -1777,10 +1777,10 @@ body {
 }
 
 .hero-copy h1 {
-  max-width: 760px;
-  font-size: clamp(3rem, 5.4vw, 5.35rem);
-  letter-spacing: -0.055em;
-  line-height: 0.98;
+  max-width: 640px;
+  font-size: clamp(2.25rem, 3.25vw, 3.25rem);
+  letter-spacing: -0.045em;
+  line-height: 1.04;
 }
 
 .hero-copy h1 em {
@@ -1799,6 +1799,10 @@ body {
   border-color: rgba(255, 255, 255, 0.24);
   box-shadow: 0 18px 42px rgba(0, 0, 0, 0.22);
   transform: translateY(-50%);
+}
+
+.hero-portrait {
+  min-height: 420px;
 }
 
 .portrait-frame img {
@@ -1830,17 +1834,19 @@ body {
 
 .section-heading h2,
 .contact-panel h2 {
-  font-size: clamp(2.15rem, 3.7vw, 3.9rem);
+  font-size: clamp(1.9rem, 2.7vw, 2.8rem);
   letter-spacing: -0.05em;
   line-height: 1.03;
 }
 
 .research-section {
-  padding-top: 5.5rem;
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
 }
 
 .focus-panel {
-  min-height: 370px;
+  min-height: 280px;
+  padding: clamp(1.2rem, 2vw, 1.55rem);
   transition: transform 220ms var(--ease), box-shadow 220ms var(--ease);
 }
 
@@ -1867,7 +1873,8 @@ body {
 }
 
 .panel-copy h3 {
-  font-size: clamp(1.9rem, 3.4vw, 3.5rem);
+  margin: 0.85rem 0 0.7rem;
+  font-size: clamp(1.65rem, 2.35vw, 2.4rem);
   letter-spacing: -0.05em;
   line-height: 0.98;
 }
@@ -1890,7 +1897,8 @@ body {
 }
 
 .panel-principle blockquote {
-  font-size: clamp(1.75rem, 2.8vw, 2.85rem);
+  margin-block: 1.5rem;
+  font-size: clamp(1.5rem, 2vw, 2.05rem);
   line-height: 1.12;
 }
 
@@ -1899,13 +1907,14 @@ body {
 }
 
 .papers-inner {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
 }
 
 .featured-paper,
 .featured-paper-primary {
-  min-height: 315px;
+  min-height: 275px;
+  padding: clamp(1.3rem, 2vw, 1.7rem);
   background: #1e3043;
 }
 
@@ -1922,9 +1931,15 @@ body {
 }
 
 .featured-paper h3 {
-  font-size: clamp(1.5rem, 2.5vw, 2.55rem);
-  letter-spacing: -0.045em;
-  line-height: 1.08;
+  margin: 0.75rem 0 0.65rem;
+  font-size: clamp(1.3rem, 1.7vw, 1.75rem);
+  letter-spacing: -0.025em;
+  line-height: 1.16;
+  text-wrap: balance;
+}
+
+.featured-paper p {
+  line-height: 1.55;
 }
 
 .paper-rows a:hover {
@@ -1937,12 +1952,13 @@ body {
 }
 
 .press-tile {
-  min-height: 210px;
+  min-height: 190px;
+  padding: 1.35rem;
   transition: transform 220ms var(--ease), box-shadow 220ms var(--ease);
 }
 
 .press-tile p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 1.15;
 }
 
@@ -1983,7 +1999,7 @@ body {
 }
 
 .page-hero {
-  padding: clamp(2.25rem, 4.5vw, 4.5rem);
+  padding: clamp(2rem, 3.5vw, 3.5rem);
   background:
     radial-gradient(circle at 88% 12%, rgba(169, 199, 195, 0.11), transparent 18rem),
     linear-gradient(125deg, #172536 0%, #29445b 100%);
@@ -1994,15 +2010,25 @@ body {
 }
 
 .page-hero h1 {
-  max-width: 760px;
-  font-size: clamp(2.75rem, 4.6vw, 4.55rem);
+  max-width: 640px;
+  font-size: clamp(1.9rem, 2.7vw, 2.65rem);
+  letter-spacing: -0.04em;
   line-height: 1.02;
 }
 
 .page-hero .lede {
   max-width: 720px;
-  font-size: clamp(1.02rem, 1.5vw, 1.28rem);
+  font-size: clamp(0.98rem, 1.3vw, 1.16rem);
   line-height: 1.45;
+}
+
+/* Keep the first publication cards in the initial viewport. */
+.publications-page .page-hero {
+  padding-block: clamp(2.5rem, 3.5vw, 3.5rem);
+}
+
+.publications-page .page-shell {
+  padding-top: 2rem;
 }
 
 .info-card,
@@ -2023,15 +2049,27 @@ body {
   }
 
   .hero-copy h1 {
-    font-size: clamp(2.75rem, 11vw, 4.15rem);
+    font-size: clamp(2.15rem, 7.8vw, 2.65rem);
+  }
+
+  .hero-portrait {
+    min-height: 350px;
   }
 
   .page-hero h1 {
-    font-size: clamp(2.5rem, 9vw, 3.35rem);
+    font-size: clamp(1.85rem, 6.2vw, 2.3rem);
   }
 
   .page-hero .lede {
-    font-size: 1.04rem;
+    font-size: 0.98rem;
+  }
+
+  .publications-page .page-hero {
+    padding-block: 2rem;
+  }
+
+  .publications-page .page-shell {
+    padding-top: 1.5rem;
   }
 
   .portrait-frame,
@@ -2041,7 +2079,7 @@ body {
   }
 
   .focus-panel {
-    min-height: 340px;
+    min-height: 270px;
   }
 }
 
@@ -2051,19 +2089,23 @@ body {
   }
 
   .hero-copy h1 {
-    font-size: clamp(2.55rem, 12vw, 3.7rem);
+    font-size: clamp(2rem, 8.8vw, 2.5rem);
+  }
+
+  .hero-portrait {
+    min-height: 310px;
   }
 
   .section-heading h2,
   .contact-panel h2 {
-    font-size: 2.35rem;
+    font-size: 1.9rem;
   }
 
   .panel-copy h3 {
-    font-size: 2.4rem;
+    font-size: 1.95rem;
   }
 
   .panel-principle blockquote {
-    font-size: 1.8rem;
+    font-size: 1.55rem;
   }
 }
